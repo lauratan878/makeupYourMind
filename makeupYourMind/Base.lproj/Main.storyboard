@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,13 +13,500 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="makeupYourMind" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WUd-IG-WsI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="430"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCB-yp-bwv">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
+                                        <color key="backgroundColor" red="0.79181891679763794" green="0.88072127103805542" blue="0.87874907255172729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="Select a Brand">
+                                            <color key="titleColor" red="0.84761512279510498" green="0.44025984406471252" blue="0.2916388213634491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectABrand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PUO-qx-Bct"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oLY-tC-CaA">
+                                        <rect key="frame" x="0.0" y="51" width="414" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDf-MZ-ShP">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.96421724557876587" green="0.84523797035217285" blue="0.81086963415145874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Rxf-AY-oJv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="Estee Lauder">
+                                                    <color key="titleColor" red="0.85848009586334229" green="0.4449811577796936" blue="0.29618597030639648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="brandTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FD8-Ux-BSe"/>
+                                                    <action selector="esteeLauder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0by-QL-RW2"/>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xfi-IK-1vw"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgw-VD-BAD">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="f70-S5-JF4"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <string key="title">Double Wear Stay-In-Place Foundation
+</string>
+                                                </state>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xu0-pi-dPh"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJq-37-O0s">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="es8-Wg-Gby"/>
+                                                </constraints>
+                                                <state key="normal" title="Pure Color Envy Sculpting Envy"/>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7L-Ls-ln2"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0O-BM-n4t">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Bec-Zi-Ev7"/>
+                                                </constraints>
+                                                <state key="normal" title="Sumptuous Extreme Lash Multiplying Volume Mascara"/>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d51-oM-F5k"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lOC-ja-iAj">
+                                        <rect key="frame" x="0.0" y="101" width="414" height="41"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agq-76-3Sk">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                                <color key="backgroundColor" red="0.95699042081832886" green="0.84108203649520874" blue="0.80678278207778931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="Maybelline New York">
+                                                    <color key="titleColor" red="0.86232668161392212" green="0.4485933780670166" blue="0.29673090577125549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="maybelline:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9VB-sV-tUR"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IE-NR-9a0">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gh4-qL-WEk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wu3-OZ-T8a">
+                                        <rect key="frame" x="0.0" y="142" width="414" height="41"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9B-jn-c7P">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                                <color key="backgroundColor" red="0.95699042081832886" green="0.84108203649520874" blue="0.80678278207778931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="Lancome">
+                                                    <color key="titleColor" red="0.80380672216415405" green="0.41838127374649048" blue="0.27636229991912842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="lancome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5xc-4f-Lch"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sH-fr-MRZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="QNq-WF-C7s"/>
+                                                </constraints>
+                                                <state key="normal" title="Teint Idole Ultra Longwear Foundation"/>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8t7-lf-yVU"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egS-jr-jVl">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="bzi-xP-TZW"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <string key="title">Monsieur Big Mascara
+</string>
+                                                </state>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f1B-6p-lta"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKD-ly-Kwg">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="sSf-MO-Fn5"/>
+                                                </constraints>
+                                                <state key="normal" title="L’absolu Rouge">
+                                                    <color key="titleShadowColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RrE-wA-xEx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XoP-jB-Ljs">
+                                        <rect key="frame" x="0.0" y="183" width="414" height="41"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5G-FD-s3a">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                                <color key="backgroundColor" red="0.95699042081832886" green="0.84108203649520874" blue="0.80678278207778931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="Covergirl">
+                                                    <color key="titleColor" red="0.85495823621749878" green="0.4444865882396698" blue="0.29563790559768677" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="covergirl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dnw-Zi-fQU"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVO-uC-QEp">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="zjz-jL-PAW"/>
+                                                </constraints>
+                                                <state key="normal" title="Clean Matte Foundation"/>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iqt-Aj-dj2"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ac-ft-BwF">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="aUf-Xb-bhI"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <string key="title">Continuous Color Lipstick
+</string>
+                                                </state>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PTv-MH-bJb"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GZ-9j-zOO">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="9p7-pZ-9LK"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <string key="title">Lash Blast Volume Mascara
+</string>
+                                                </state>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XkN-Je-o3m"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6Zd-F6-ODc">
+                                        <rect key="frame" x="0.0" y="224" width="414" height="42"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqq-SG-PWh">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
+                                                <color key="backgroundColor" red="0.96421724557876587" green="0.84523797035217285" blue="0.81086963415145874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="ELF Cosmetics">
+                                                    <color key="titleColor" red="0.83290350437164307" green="0.43192648887634277" blue="0.28654751181602478" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="elf:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9kh-aH-u21"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkJ-lW-hG8">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="U73-mQ-vLc"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <string key="title">Flawless Finish Foundation
+</string>
+                                                </state>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OAY-9H-b5X"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb6-PB-6eO">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="VWt-aO-brZ"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <string key="title">Lip Plumping Gloss
+</string>
+                                                </state>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nLF-5f-JB5"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tR-zw-w6T">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="hr3-gD-XIA"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <string key="title">Opposites Attract Eyeshadow Palette
+</string>
+                                                </state>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K40-qJ-utx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nQu-Mn-GKU">
+                                        <rect key="frame" x="0.0" y="266" width="414" height="41"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ine-VM-CQJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                                <color key="backgroundColor" red="0.95307666063308716" green="0.83716416358947754" blue="0.80286568403244019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="Urban Decay">
+                                                    <color key="titleColor" red="0.84761512279510498" green="0.44025984406471252" blue="0.2916388213634491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="urbanDecay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ooj-Y6-uGl"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FzA-N5-2Rr">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="dJ6-ac-j0B"/>
+                                                </constraints>
+                                                <state key="normal" title="Naked2 Palette"/>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5z1-S6-CHy"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYF-U0-wi0">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="vdk-hT-9dR"/>
+                                                </constraints>
+                                                <state key="normal" title="NAKED SKIN Weightless Ultra Definition Liquid Makeup"/>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xM4-Kx-IFp"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeJ-qe-rFf">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="P3h-EY-maP"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <string key="title">Vice Lipstick
+</string>
+                                                </state>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dYI-RW-Via"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nwz-1C-wj7">
+                                        <rect key="frame" x="0.0" y="307" width="414" height="41"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlU-uv-uOp">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                                <color key="backgroundColor" red="0.96020430326461792" green="0.84156203269958496" blue="0.8107033371925354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="NARS">
+                                                    <color key="titleColor" red="0.85495823621749878" green="0.4444865882396698" blue="0.29563790559768677" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="nars:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rvj-WF-6L7"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZi-RO-RDi">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="qCu-Fu-6vL"/>
+                                                </constraints>
+                                                <state key="normal" title="Skin Deep Eye Palette"/>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hTt-cA-VpS"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cy-eY-8zd">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Dle-Ey-7Yy"/>
+                                                </constraints>
+                                                <state key="normal" title="NARS Lipstick"/>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VBp-UA-RlX"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7U4-xv-WE5">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="DOF-MZ-e96"/>
+                                                </constraints>
+                                                <state key="normal" title="Natural Radiant Longwear Foundation"/>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cRU-qF-EuN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uDT-w2-YBa">
+                                        <rect key="frame" x="0.0" y="348" width="414" height="41"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Upa-Jd-Hd3">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                                <color key="backgroundColor" red="0.96020430326461792" green="0.84156203269958496" blue="0.8107033371925354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="Dior">
+                                                    <color key="titleColor" red="0.85495823621749878" green="0.4444865882396698" blue="0.29563790559768677" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="dior:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ff-4b-lOa"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSH-7C-7aI">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="G3X-nX-JS6"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <string key="title">Dior Addict Lip Glow Color Reviver Balm
+</string>
+                                                </state>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dl5-ft-n95"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iaj-Td-Eju">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="zCK-Jm-btF"/>
+                                                </constraints>
+                                                <state key="normal" title="Dior AirFlash Spray Foundation"/>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cUK-SO-j3M"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQv-7G-8E0">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="KkZ-5f-IH1"/>
+                                                </constraints>
+                                                <state key="normal" title="Diorshow Mascara"/>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pQy-5T-K18"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0xG-jY-6CU">
+                                        <rect key="frame" x="0.0" y="389" width="414" height="41"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiB-DK-6po">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                                <color key="backgroundColor" red="0.96421724557876587" green="0.84523797035217285" blue="0.81086963415145874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="L'Oreal">
+                                                    <color key="titleColor" red="0.84409409761428833" green="0.43976706266403198" blue="0.29109007120132446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loreal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EE0-i9-Hrl"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qn7-SK-6NG">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="sZv-fQ-p8c"/>
+                                                </constraints>
+                                                <state key="normal" title="Voluminous Lash Paradise Waterproof Mascara"/>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1bh-Sl-6l0"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1Q-Ty-URM">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="5hw-Km-bSF"/>
+                                                </constraints>
+                                                <state key="normal" title="Infallible Up to 24HR Fresh Wear Foundation"/>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DCz-tk-fh6"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sde-mn-ZCx">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Dje-vv-Sq9"/>
+                                                </constraints>
+                                                <state key="normal" title="Infallible Pro Matte Les Chocolats Scented Liquid Lipstick"/>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="teZ-DC-bP7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="yau-lM-zCH"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WUd-IG-WsI" secondAttribute="trailing" id="1nb-z9-joi"/>
+                            <constraint firstItem="WUd-IG-WsI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2IC-Jq-hdg"/>
+                            <constraint firstItem="WUd-IG-WsI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="p5t-hQ-ydG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outletCollection property="options" destination="vDf-MZ-ShP" collectionClass="NSMutableArray" id="nkA-eg-RYt"/>
+                        <outletCollection property="options" destination="Agq-76-3Sk" collectionClass="NSMutableArray" id="nce-ww-nGt"/>
+                        <outletCollection property="options" destination="r9B-jn-c7P" collectionClass="NSMutableArray" id="adz-jM-J4o"/>
+                        <outletCollection property="options" destination="o5G-FD-s3a" collectionClass="NSMutableArray" id="2la-i7-vh5"/>
+                        <outletCollection property="options" destination="Uqq-SG-PWh" collectionClass="NSMutableArray" id="fKI-3g-ycr"/>
+                        <outletCollection property="options" destination="ine-VM-CQJ" collectionClass="NSMutableArray" id="6km-4I-7gT"/>
+                        <outletCollection property="options" destination="hlU-uv-uOp" collectionClass="NSMutableArray" id="vTx-cx-YvI"/>
+                        <outletCollection property="options" destination="Upa-Jd-Hd3" collectionClass="NSMutableArray" id="G5T-T7-Muw"/>
+                        <outletCollection property="options" destination="tiB-DK-6po" collectionClass="NSMutableArray" id="mpI-jq-01q"/>
+                        <outletCollection property="esteeLauderProducts" destination="dgw-VD-BAD" collectionClass="NSMutableArray" id="nuj-bU-ato"/>
+                        <outletCollection property="esteeLauderProducts" destination="qJq-37-O0s" collectionClass="NSMutableArray" id="wW7-oD-f37"/>
+                        <outletCollection property="esteeLauderProducts" destination="l0O-BM-n4t" collectionClass="NSMutableArray" id="D7E-fC-nzj"/>
+                        <outletCollection property="maybellineProducts" destination="0IE-NR-9a0" collectionClass="NSMutableArray" id="6Ip-DP-JFw"/>
+                        <outletCollection property="lorealProducts" destination="Qn7-SK-6NG" collectionClass="NSMutableArray" id="zQt-WS-Oh7"/>
+                        <outletCollection property="lorealProducts" destination="b1Q-Ty-URM" collectionClass="NSMutableArray" id="3IP-JF-mJm"/>
+                        <outletCollection property="lorealProducts" destination="sde-mn-ZCx" collectionClass="NSMutableArray" id="GDo-am-7YV"/>
+                        <outletCollection property="lancomeFoundation" destination="8sH-fr-MRZ" collectionClass="NSMutableArray" id="LMI-fv-Gbl"/>
+                        <outletCollection property="lancomeFoundation" destination="egS-jr-jVl" collectionClass="NSMutableArray" id="Hfu-il-img"/>
+                        <outletCollection property="lancomeFoundation" destination="xKD-ly-Kwg" collectionClass="NSMutableArray" id="QOv-bN-Oa2"/>
+                        <outletCollection property="covergirlProducts" destination="nVO-uC-QEp" collectionClass="NSMutableArray" id="Lp8-L7-A65"/>
+                        <outletCollection property="covergirlProducts" destination="4ac-ft-BwF" collectionClass="NSMutableArray" id="kSS-07-qZT"/>
+                        <outletCollection property="covergirlProducts" destination="1GZ-9j-zOO" collectionClass="NSMutableArray" id="QUQ-vb-DCi"/>
+                        <outletCollection property="elfProducts" destination="BkJ-lW-hG8" collectionClass="NSMutableArray" id="jjm-I0-67e"/>
+                        <outletCollection property="elfProducts" destination="bb6-PB-6eO" collectionClass="NSMutableArray" id="LCA-cM-iGK"/>
+                        <outletCollection property="elfProducts" destination="2tR-zw-w6T" collectionClass="NSMutableArray" id="GQk-7g-8O1"/>
+                        <outletCollection property="urbanDecayProducts" destination="FzA-N5-2Rr" collectionClass="NSMutableArray" id="6nX-K8-JdV"/>
+                        <outletCollection property="urbanDecayProducts" destination="zYF-U0-wi0" collectionClass="NSMutableArray" id="S8Z-Mt-8gE"/>
+                        <outletCollection property="urbanDecayProducts" destination="VeJ-qe-rFf" collectionClass="NSMutableArray" id="eXg-Ph-SdF"/>
+                        <outletCollection property="narsProducts" destination="sZi-RO-RDi" collectionClass="NSMutableArray" id="etH-uK-VWo"/>
+                        <outletCollection property="narsProducts" destination="6cy-eY-8zd" collectionClass="NSMutableArray" id="9hd-x2-Nvu"/>
+                        <outletCollection property="narsProducts" destination="7U4-xv-WE5" collectionClass="NSMutableArray" id="ARL-0J-p6m"/>
+                        <outletCollection property="diorProducts" destination="dSH-7C-7aI" collectionClass="NSMutableArray" id="fyl-2I-U21"/>
+                        <outletCollection property="diorProducts" destination="Iaj-Td-Eju" collectionClass="NSMutableArray" id="jOt-zP-JsW"/>
+                        <outletCollection property="diorProducts" destination="RQv-7G-8E0" collectionClass="NSMutableArray" id="qQG-KY-WeD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
