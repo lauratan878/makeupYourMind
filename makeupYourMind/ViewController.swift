@@ -22,6 +22,10 @@ class ViewController: UIViewController {
     @IBOutlet var diorProducts: [UIButton]!
     
     
+    var product : String = ""
+    var brand : String = ""
+    
+    
     
     
     
@@ -123,17 +127,18 @@ class ViewController: UIViewController {
     
     
     @IBAction func brandTapped(_ sender: UIButton) {
-        guard let brand = sender.currentTitle else{
-        return
+        brand = sender.currentTitle!
+        
     }
     
-    }
     
     
     @IBAction func productTapped(_ sender: UIButton) {
-        guard let product = sender.currentTitle else{
-            return
-        }
+        product = sender.currentTitle!
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var secondController = segue.destination as! SecondViewController
+        secondController.myString = product
+        secondController.brandString = brand
+    }
 }
