@@ -9,27 +9,57 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
     @IBOutlet weak var productName: UILabel!
     
+    
+    @IBOutlet weak var badStuff: UILabel!
+    @IBOutlet weak var badScore: UILabel!
+    @IBOutlet weak var individualScores: UILabel!
+    
+    var data = MakeupData()
+
     var myString = String()
     var brandString = String()
+    var badIngredients = [String]()
+    var totalScore = [Int]()
+    var startingScore = 0
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        badIngredients = Array(data.products[myString]!.keys)
+        totalScore = Array(data.products[myString]!.values)
+        let stringScore = totalScore.map { String($0) }
+        
         productName.text = myString
-        // Do any additional setup after loading the view.
+    
+        badStuff.text = badIngredients.joined(separator: "\n")
+        
+        individualScores.text = stringScore.joined(separator: "\n")
+        
+        for values in totalScore {
+            startingScore = values + startingScore
+        }
+        badScore.text = String(startingScore)
+        
+        
+        if startingScore < 9 {
+            badScore.backgroundColor = UIColor.yellow
+        }
+        if startingScore <= 4 {
+            badScore.backgroundColor = UIColor.green
+        }
+         else {
+            badScore.backgroundColor = UIColor.red
+            badScore.textColor = UIColor.white
+        }
+    }
+    
+    
+    
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}

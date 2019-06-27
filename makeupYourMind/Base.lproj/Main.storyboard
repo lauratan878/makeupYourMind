@@ -85,10 +85,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="f70-S5-JF4"/>
                                                 </constraints>
-                                                <state key="normal">
-                                                    <string key="title">Double Wear Stay-In-Place Foundation
-</string>
-                                                </state>
+                                                <state key="normal" title="Double Wear Stay-In-Place Foundation"/>
                                                 <connections>
                                                     <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xu0-pi-dPh"/>
                                                 </connections>
@@ -130,10 +127,33 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IE-NR-9a0">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="2hC-ve-kKI"/>
+                                                </constraints>
+                                                <state key="normal" title="Superstay Matte Ink Liquid Lipstick"/>
                                                 <connections>
                                                     <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gh4-qL-WEk"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIP-b0-tXS">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="0FS-Qn-cQx"/>
+                                                </constraints>
+                                                <state key="normal" title="Superstay Full Coverage Foundation"/>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pZe-lo-jjC"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJp-C2-gMP">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="THo-rF-hkE"/>
+                                                </constraints>
+                                                <state key="normal" title="City Mini Eyeshadow Palette"/>
+                                                <connections>
+                                                    <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a5Y-6a-NuK"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -167,10 +187,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="bzi-xP-TZW"/>
                                                 </constraints>
-                                                <state key="normal">
-                                                    <string key="title">Monsieur Big Mascara
-</string>
-                                                </state>
+                                                <state key="normal" title="Monsieur Big Mascara"/>
                                                 <connections>
                                                     <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f1B-6p-lta"/>
                                                 </connections>
@@ -218,23 +235,17 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="aUf-Xb-bhI"/>
                                                 </constraints>
-                                                <state key="normal">
-                                                    <string key="title">Continuous Color Lipstick
-</string>
-                                                </state>
+                                                <state key="normal" title="Continuous Color Lipstick"/>
                                                 <connections>
                                                     <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PTv-MH-bJb"/>
                                                 </connections>
                                             </button>
-                                            <button hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GZ-9j-zOO">
+                                            <button hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GZ-9j-zOO" userLabel="Lash Blast Volume Mascara">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="9p7-pZ-9LK"/>
                                                 </constraints>
-                                                <state key="normal">
-                                                    <string key="title">Lash Blast Volume Mascara
-</string>
-                                                </state>
+                                                <state key="normal" title="Lash Blast Volume Mascara"/>
                                                 <connections>
                                                     <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XkN-Je-o3m"/>
                                                 </connections>
@@ -260,10 +271,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="U73-mQ-vLc"/>
                                                 </constraints>
-                                                <state key="normal">
-                                                    <string key="title">Flawless Finish Foundation
-</string>
-                                                </state>
+                                                <state key="normal" title="Flawless Finish Foundation"/>
                                                 <connections>
                                                     <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OAY-9H-b5X"/>
                                                 </connections>
@@ -273,10 +281,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="VWt-aO-brZ"/>
                                                 </constraints>
-                                                <state key="normal">
-                                                    <string key="title">Lip Plumping Gloss
-</string>
-                                                </state>
+                                                <state key="normal" title="Lip Plumping Gloss"/>
                                                 <connections>
                                                     <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nLF-5f-JB5"/>
                                                 </connections>
@@ -286,10 +291,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="hr3-gD-XIA"/>
                                                 </constraints>
-                                                <state key="normal">
-                                                    <string key="title">Opposites Attract Eyeshadow Palette
-</string>
-                                                </state>
+                                                <state key="normal" title="Opposites Attract Eyeshadow Palette"/>
                                                 <connections>
                                                     <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K40-qJ-utx"/>
                                                 </connections>
@@ -335,10 +337,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="P3h-EY-maP"/>
                                                 </constraints>
-                                                <state key="normal">
-                                                    <string key="title">Vice Lipstick
-</string>
-                                                </state>
+                                                <state key="normal" title="Vice Lipstick"/>
                                                 <connections>
                                                     <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dYI-RW-Via"/>
                                                 </connections>
@@ -410,10 +409,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="G3X-nX-JS6"/>
                                                 </constraints>
-                                                <state key="normal">
-                                                    <string key="title">Dior Addict Lip Glow Color Reviver Balm
-</string>
-                                                </state>
+                                                <state key="normal" title="Addict Lip Glow Color Reviver Balm"/>
                                                 <connections>
                                                     <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dl5-ft-n95"/>
                                                 </connections>
@@ -423,7 +419,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="zCK-Jm-btF"/>
                                                 </constraints>
-                                                <state key="normal" title="Dior AirFlash Spray Foundation"/>
+                                                <state key="normal" title="AirFlash Spray Foundation"/>
                                                 <connections>
                                                     <action selector="productTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cUK-SO-j3M"/>
                                                 </connections>
@@ -561,17 +557,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfW-Ov-N1G">
-                                <rect key="frame" x="-42" y="109" width="513" height="165"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24g-zF-uon">
-                                <rect key="frame" x="25" y="832" width="49" height="30"/>
+                                <rect key="frame" x="25" y="813" width="76" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84409409759999998" green="0.43976706269999999" blue="0.29109007120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="0.96421724559999999" green="0.84523797040000004" blue="0.81086963420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -579,11 +569,62 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="hhq-Zs-RN8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfW-Ov-N1G">
+                                <rect key="frame" x="25" y="53" width="362" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                <color key="textColor" red="0.84409409759999998" green="0.43976706269999999" blue="0.29109007120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ah9-B6-obS">
+                                <rect key="frame" x="25" y="178" width="362" height="434"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96421724559999999" green="0.84523797040000004" blue="0.81086963420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Possible Hazards:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9x-Ut-2SH">
+                                <rect key="frame" x="114" y="192" width="201" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.84409409759999998" green="0.43976706269999999" blue="0.29109007120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuR-wY-VVd">
+                                <rect key="frame" x="48" y="93" width="244" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVv-ox-RpV">
+                                <rect key="frame" x="300" y="93" width="65" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Rating:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1b-Pa-CKB">
+                                <rect key="frame" x="110" y="637" width="208" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" red="1" green="0.7329494969" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIE-Wu-MhT">
+                                <rect key="frame" x="171" y="688" width="79" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.79181891680000005" green="0.88072127099999997" blue="0.87874907260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Nit-7g-BY1"/>
                     </view>
                     <connections>
+                        <outlet property="badScore" destination="XIE-Wu-MhT" id="deI-lR-DU8"/>
+                        <outlet property="badStuff" destination="GuR-wY-VVd" id="m2i-qY-pyf"/>
+                        <outlet property="individualScores" destination="AVv-ox-RpV" id="OM2-I7-8no"/>
                         <outlet property="productName" destination="AfW-Ov-N1G" id="qNd-Yz-fPS"/>
                     </connections>
                 </viewController>
@@ -598,6 +639,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="qGc-Rk-Whe"/>
-        <segue reference="nfl-Cj-8Xu"/>
+        <segue reference="hhq-Zs-RN8"/>
     </inferredMetricsTieBreakers>
 </document>
