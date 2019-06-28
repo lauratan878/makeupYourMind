@@ -542,6 +542,8 @@
                         <outletCollection property="diorProducts" destination="dSH-7C-7aI" collectionClass="NSMutableArray" id="fyl-2I-U21"/>
                         <outletCollection property="diorProducts" destination="Iaj-Td-Eju" collectionClass="NSMutableArray" id="jOt-zP-JsW"/>
                         <outletCollection property="diorProducts" destination="RQv-7G-8E0" collectionClass="NSMutableArray" id="qQG-KY-WeD"/>
+                        <outletCollection property="maybellineProducts" destination="AIP-b0-tXS" collectionClass="NSMutableArray" id="gV7-fp-jHO"/>
+                        <outletCollection property="maybellineProducts" destination="KJp-C2-gMP" collectionClass="NSMutableArray" id="GmA-AF-iFi"/>
                         <segue destination="K6E-Me-cBc" kind="show" identifier="segue" id="sWa-mo-9QY"/>
                     </connections>
                 </viewController>
@@ -590,17 +592,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuR-wY-VVd">
-                                <rect key="frame" x="48" y="93" width="244" height="500"/>
+                                <rect key="frame" x="48" y="229" width="244" height="364"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVv-ox-RpV">
-                                <rect key="frame" x="300" y="93" width="65" height="500"/>
+                                <rect key="frame" x="300" y="229" width="65" height="364"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Rating:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1b-Pa-CKB">
@@ -639,6 +641,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="qGc-Rk-Whe"/>
-        <segue reference="nfl-Cj-8Xu"/>
+        <segue reference="hhq-Zs-RN8"/>
     </inferredMetricsTieBreakers>
 </document>
